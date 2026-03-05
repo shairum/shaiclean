@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="form-styles.css" />
+    <title>SHAIRUM</title>
   </head>
   <body>
     <div class="PC">
