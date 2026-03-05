@@ -1,0 +1,674 @@
+.about-page {
+    background-color: #29282d;
+    overflow: hidden;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 4000px;
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    color: #d0d0d0;
+}
+
+.about-page .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.about-page .hero-section {
+    position: relative;
+    width: 100%;
+    margin-top: 97px;
+    padding: 120px 48px;
+    background-color: #29282d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-page .hero-content {
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.about-page .hero-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #5b9061;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-page .hero-subtitle {
+    font-family: "Jost-Regular", Helvetica;
+    font-weight: 400;
+    color: #d0d0d0;
+    font-size: 24px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.about-page .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.about-page .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-page .stat-number {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #d0a303;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.about-page .stat-text {
+    font-family: "Jost-Regular", Helvetica;
+    font-weight: 400;
+    color: #5b9061;
+    font-size: 18px;
+    text-align: center;
+    max-width: 150px;
+}
+
+.about-page section {
+    padding: 100px 0;
+    position: relative;
+    background-color: #29282d;
+}
+
+.about-page .section-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #5b9061;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.about-page .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #d0a303;
+}
+
+.about-page .mission-section {
+    background-color: #29282d;
+}
+
+.about-page .mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-page .mission-text {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+.about-page .mission-text p {
+    margin-bottom: 25px;
+}
+
+.about-page .mission-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-page .mission-image .image-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #5b9061;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page .mission-image .image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 40, 45, 0.3);
+}
+
+.about-page .image-text {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    max-width: 400px;
+}
+
+.about-page .values-section {
+    background-color: #29282d;
+}
+
+.about-page .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.about-page .value-card {
+    background-color: rgba(91, 144, 97, 0.1);
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.about-page .value-card:hover {
+    transform: translateY(-10px);
+    border-color: #5b9061;
+    background-color: rgba(91, 144, 97, 0.2);
+    box-shadow: 0 10px 30px rgba(91, 144, 97, 0.2);
+}
+
+.about-page .value-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background-color: rgba(208, 163, 3, 0.1);
+    border-radius: 50%;
+    color: #d0a303;
+}
+
+.about-page .value-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 24px;
+    color: #d0d0d0;
+    margin-bottom: 15px;
+}
+
+.about-page .value-description {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+.about-page .team-section {
+    background-color: #29282d;
+}
+
+.about-page .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.about-page .team-member {
+    background-color: rgba(91, 144, 97, 0.1);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-page .team-member:hover {
+    transform: translateY(-10px);
+    background-color: rgba(91, 144, 97, 0.2);
+    box-shadow: 0 10px 30px rgba(91, 144, 97, 0.2);
+}
+
+.about-page .member-photo .photo-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #5b9061;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 48px;
+    color: white;
+}
+
+.about-page .member-name {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 24px;
+    color: #d0d0d0;
+    margin-bottom: 10px;
+}
+
+.about-page .member-position {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 18px;
+    color: #d0a303;
+    margin-bottom: 20px;
+}
+
+.about-page .member-bio {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+.about-page .process-section {
+    background-color: #29282d;
+}
+
+.about-page .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.about-page .process-step {
+    text-align: center;
+    position: relative;
+}
+
+.about-page .process-step::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 30px;
+    height: 3px;
+    background-color: #5b9061;
+    display: none;
+}
+
+.about-page .process-step:last-child::after {
+    display: none;
+}
+
+.about-page .step-number {
+    width: 80px;
+    height: 80px;
+    background-color: #5b9061;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 32px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.about-page .step-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 22px;
+    color: #d0d0d0;
+    margin-bottom: 15px;
+}
+
+.about-page .step-description {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+.about-page .equipment-section {
+    background-color: #29282d;
+}
+
+.about-page .equipment-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-page .equipment-text {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+.about-page .equipment-list {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.about-page .equipment-list li {
+    margin-bottom: 15px;
+    color: #a0a0a0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-page .equipment-list li::marker {
+    color: #5b9061;
+}
+
+.about-page .equipment-image .image-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #d0a303;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page .certificates-section {
+    background-color: #29282d;
+}
+
+.about-page .certificates-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.about-page .certificate-item {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: rgba(91, 144, 97, 0.1);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.about-page .certificate-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(91, 144, 97, 0.2);
+}
+
+.about-page .certificate-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background-color: rgba(208, 163, 3, 0.1);
+    border-radius: 50%;
+    color: #d0a303;
+}
+
+.about-page .certificate-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 22px;
+    color: #d0d0d0;
+    margin-bottom: 15px;
+}
+
+.about-page .certificate-description {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+.about-page .cta-section {
+    background-color: #29282d;
+    text-align: center;
+}
+
+.about-page .cta-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 48px;
+    color: #5b9061;
+    margin-bottom: 20px;
+}
+
+.about-page .cta-subtitle {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    color: #d0d0d0;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.about-page .cta-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    flex-wrap: wrap;
+}
+
+.about-page .form-input {
+    flex: 1;
+    min-width: 250px;
+    height: 60px;
+    background-color: rgba(41, 40, 45, 0.8);
+    border: 2px solid #5b9061;
+    border-radius: 15px;
+    padding: 0 25px;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 18px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.about-page .form-input:focus {
+    outline: none;
+    border-color: #d0a303;
+    background-color: rgba(41, 40, 45, 1);
+}
+
+.about-page .form-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.about-page .cta-button {
+    height: 60px;
+    padding: 0 40px;
+    background-color: #d0a303;
+    border: none;
+    border-radius: 15px;
+    font-family: "Jost-Bold", Helvetica;
+    font-size: 20px;
+    color: #29282d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.about-page .cta-button:hover {
+    background-color: #e6b804;
+    transform: translateY(-3px);
+}
+
+.about-page .form-notice {
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 14px;
+    color: rgba(208, 208, 208, 0.6);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-page .footer {
+    background-color: rgba(41, 40, 45, 0.95);
+    padding: 60px 0 40px;
+}
+
+.about-page .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-page .footer-left {
+    flex: 1;
+}
+
+.about-page .footer-title {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #5b9061;
+    font-size: 48px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.about-page .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-page .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-page .contact-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.about-page .contact-text {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #5b906180;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.about-page .footer-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page .footer-logo {
+    font-family: "Jost-Bold", Helvetica;
+    font-weight: 700;
+    color: #5b9061;
+    font-size: 144px;
+    text-align: center;
+    line-height: 1;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-page .hero-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.about-page .mission-section {
+    animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.about-page .values-section {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.about-page .team-section {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.about-page .process-section {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.about-page .equipment-section {
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.about-page .certificates-section {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.about-page .cta-section {
+    animation: fadeInUp 0.8s ease-out 0.7s both;
+}
+
+.about-page .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #29282d;
+    pointer-events: none;
+}
+
+.about-page .mission-image .image-placeholder::after,
+.about-page .equipment-image .image-placeholder::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+@media (min-width: 1025px) {
+    .about-page .process-step::after {
+        display: block;
+    }
+}

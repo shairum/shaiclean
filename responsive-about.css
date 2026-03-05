@@ -1,0 +1,756 @@
+/* responsive-about.css - адаптивные стили для страницы "О компании" */
+
+/* Базовые адаптивные настройки для страницы "О нас" */
+@media (max-width: 1480px) {
+    .about-page {
+        min-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .about-page .container {
+        width: 100% !important;
+        padding-left: 48px !important;
+        padding-right: 48px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .about-page .hero-section,
+    .about-page .mission-section,
+    .about-page .values-section,
+    .about-page .team-section,
+    .about-page .process-section,
+    .about-page .equipment-section,
+    .about-page .certificates-section,
+    .about-page .cta-section,
+    .about-page .footer {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .about-page .hero-section {
+        margin-top: 97px !important;
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+
+    .about-page .values-grid,
+    .about-page .team-grid,
+    .about-page .process-steps,
+    .about-page .certificates-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+
+    .about-page .mission-content,
+    .about-page .equipment-content {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .about-page .footer-content {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .about-page .footer-left,
+    .about-page .footer-right {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .about-page .contact-info {
+        align-items: center !important;
+    }
+
+    .about-page .contact-item {
+        justify-content: center !important;
+    }
+
+    .about-page .footer-logo {
+        font-size: 96px !important;
+        margin-top: 20px !important;
+    }
+}
+
+/* Планшеты и небольшие ноутбуки */
+@media (max-width: 1024px) {
+    .about-page {
+        min-height: auto !important;
+        position: relative !important;
+    }
+
+    .about-page .hero-section {
+        padding: 60px 48px !important;
+    }
+
+    .about-page .hero-title {
+        font-size: 48px !important;
+        line-height: 1.1 !important;
+    }
+
+    .about-page .hero-subtitle {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+    }
+
+    .about-page .hero-stats {
+        gap: 40px !important;
+        margin-top: 40px !important;
+    }
+
+    .about-page .stat-number {
+        font-size: 36px !important;
+    }
+
+    .about-page .stat-text {
+        font-size: 16px !important;
+    }
+
+    .about-page section {
+        padding: 80px 0 !important;
+    }
+
+    .about-page .section-title {
+        font-size: 36px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .about-page .section-title::after {
+        bottom: -15px !important;
+        width: 80px !important;
+    }
+
+    .about-page .mission-text {
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+    }
+
+    .about-page .mission-image .image-placeholder,
+    .about-page .equipment-image .image-placeholder {
+        height: 300px !important;
+    }
+
+    .about-page .image-text {
+        font-size: 24px !important;
+    }
+
+    .about-page .value-card,
+    .about-page .team-member,
+    .about-page .certificate-item {
+        padding: 30px 20px !important;
+    }
+
+    .about-page .value-icon,
+    .about-page .certificate-icon {
+        font-size: 36px !important;
+        height: 60px !important;
+        width: 60px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .about-page .value-title,
+    .about-page .certificate-title {
+        font-size: 20px !important;
+    }
+
+    .about-page .value-description,
+    .about-page .certificate-description {
+        font-size: 15px !important;
+    }
+
+    .about-page .member-photo .photo-placeholder {
+        width: 120px !important;
+        height: 120px !important;
+        font-size: 36px !important;
+    }
+
+    .about-page .member-name {
+        font-size: 20px !important;
+    }
+
+    .about-page .member-position {
+        font-size: 16px !important;
+    }
+
+    .about-page .member-bio {
+        font-size: 15px !important;
+    }
+
+    .about-page .process-steps {
+        gap: 20px !important;
+    }
+
+    .about-page .step-number {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 24px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .about-page .step-title {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-page .step-description {
+        font-size: 14px !important;
+    }
+
+    .about-page .equipment-text {
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+    }
+
+    .about-page .equipment-list li {
+        font-size: 16px !important;
+    }
+
+    .about-page .cta-title {
+        font-size: 36px !important;
+    }
+
+    .about-page .cta-subtitle {
+        font-size: 18px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .about-page .cta-form {
+        gap: 15px !important;
+    }
+
+    .about-page .form-input {
+        height: 55px !important;
+        font-size: 16px !important;
+        padding: 0 20px !important;
+    }
+
+    .about-page .cta-button {
+        height: 55px !important;
+        font-size: 18px !important;
+        padding: 0 30px !important;
+    }
+
+    .about-page .footer-title {
+        font-size: 36px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .about-page .contact-text {
+        font-size: 18px !important;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .about-page {
+        width: 100% !important;
+        min-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .about-page .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .about-page .hero-section {
+        margin-top: 70px !important;
+        padding: 50px 20px !important;
+    }
+
+    .about-page .hero-title {
+        font-size: 36px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .about-page .hero-subtitle {
+        font-size: 18px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .about-page .hero-stats {
+        gap: 30px !important;
+        margin-top: 30px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .about-page .stat-item {
+        gap: 5px !important;
+    }
+
+    .about-page .stat-number {
+        font-size: 32px !important;
+    }
+
+    .about-page .stat-text {
+        font-size: 14px !important;
+        max-width: 120px !important;
+    }
+
+    .about-page section {
+        padding: 60px 0 !important;
+    }
+
+    .about-page .section-title {
+        font-size: 32px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Адаптация сеток */
+    .about-page .values-grid,
+    .about-page .team-grid,
+    .about-page .process-steps,
+    .about-page .certificates-content {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    .about-page .mission-content,
+    .about-page .equipment-content {
+        gap: 30px !important;
+    }
+
+    .about-page .mission-image .image-placeholder,
+    .about-page .equipment-image .image-placeholder {
+        height: 250px !important;
+    }
+
+    .about-page .image-text {
+        font-size: 20px !important;
+        padding: 15px !important;
+    }
+
+    .about-page .value-card,
+    .about-page .team-member,
+    .about-page .certificate-item {
+        padding: 25px 20px !important;
+    }
+
+    .about-page .value-icon,
+    .about-page .certificate-icon {
+        font-size: 32px !important;
+        height: 50px !important;
+        width: 50px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .about-page .value-title,
+    .about-page .certificate-title,
+    .about-page .member-name {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-page .value-description,
+    .about-page .certificate-description,
+    .about-page .member-bio {
+        font-size: 14px !important;
+    }
+
+    .about-page .member-position {
+        font-size: 16px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .about-page .process-step::after {
+        display: none !important;
+    }
+
+    .about-page .process-steps {
+        gap: 30px !important;
+    }
+
+    .about-page .step-number {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .about-page .step-title {
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .about-page .step-description {
+        font-size: 14px !important;
+    }
+
+    .about-page .equipment-text {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
+
+    .about-page .equipment-list {
+        margin-top: 20px !important;
+        padding-left: 15px !important;
+    }
+
+    .about-page .equipment-list li {
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-page .cta-section {
+        padding: 50px 20px !important;
+    }
+
+    .about-page .cta-title {
+        font-size: 28px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .about-page .cta-subtitle {
+        font-size: 16px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .about-page .cta-form {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .about-page .form-input {
+        width: 100% !important;
+        min-width: auto !important;
+        height: 50px !important;
+        font-size: 16px !important;
+        padding: 0 15px !important;
+    }
+
+    .about-page .cta-button {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 18px !important;
+        padding: 0 !important;
+    }
+
+    .about-page .form-notice {
+        font-size: 13px !important;
+    }
+
+    .about-page .footer {
+        padding: 40px 20px !important;
+    }
+
+    .about-page .footer-content {
+        gap: 30px !important;
+    }
+
+    .about-page .footer-title {
+        font-size: 32px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .about-page .contact-info {
+        gap: 20px !important;
+    }
+
+    .about-page .contact-item {
+        flex-direction: column !important;
+        gap: 10px !important;
+        text-align: center !important;
+    }
+
+    .about-page .contact-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .about-page .contact-text {
+        font-size: 16px !important;
+    }
+
+    .about-page .footer-logo {
+        font-size: 60px !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .about-page .hero-title {
+        font-size: 28px !important;
+    }
+
+    .about-page .hero-subtitle {
+        font-size: 16px !important;
+    }
+
+    .about-page .stat-number {
+        font-size: 28px !important;
+    }
+
+    .about-page .section-title {
+        font-size: 26px !important;
+    }
+
+    .about-page .section-title::after {
+        width: 60px !important;
+        bottom: -10px !important;
+    }
+
+    .about-page .mission-text,
+    .about-page .equipment-text {
+        font-size: 15px !important;
+    }
+
+    .about-page .image-text {
+        font-size: 18px !important;
+    }
+
+    .about-page .value-title,
+    .about-page .certificate-title,
+    .about-page .member-name {
+        font-size: 18px !important;
+    }
+
+    .about-page .value-description,
+    .about-page .certificate-description,
+    .about-page .member-bio,
+    .about-page .step-description {
+        font-size: 13px !important;
+    }
+
+    .about-page .step-title {
+        font-size: 16px !important;
+    }
+
+    .about-page .cta-title {
+        font-size: 24px !important;
+    }
+
+    .about-page .cta-subtitle {
+        font-size: 15px !important;
+    }
+
+    .about-page .footer-title {
+        font-size: 28px !important;
+    }
+
+    .about-page .contact-text {
+        font-size: 15px !important;
+    }
+
+    .about-page .footer-logo {
+        font-size: 48px !important;
+    }
+}
+
+/* Горизонтальная ориентация для мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .about-page .hero-section {
+        padding: 30px 20px !important;
+        margin-top: 70px !important;
+    }
+
+    .about-page .hero-title {
+        font-size: 24px !important;
+    }
+
+    .about-page .hero-subtitle {
+        font-size: 14px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .about-page .hero-stats {
+        flex-direction: row !important;
+        gap: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .about-page section {
+        padding: 40px 0 !important;
+    }
+
+    .about-page .section-title {
+        font-size: 24px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .about-page .mission-image .image-placeholder,
+    .about-page .equipment-image .image-placeholder {
+        height: 200px !important;
+    }
+
+    .about-page .image-text {
+        font-size: 16px !important;
+    }
+}
+
+/* Улучшение доступности для пользователей с ограничениями */
+@media (prefers-reduced-motion: reduce) {
+    .about-page .hero-section,
+    .about-page .mission-section,
+    .about-page .values-section,
+    .about-page .team-section,
+    .about-page .process-section,
+    .about-page .equipment-section,
+    .about-page .certificates-section,
+    .about-page .cta-section {
+        animation: none !important;
+    }
+
+    .about-page .value-card:hover,
+    .about-page .team-member:hover,
+    .about-page .certificate-item:hover,
+    .about-page .cta-button:hover {
+        transform: none !important;
+    }
+
+    .about-page .mission-image .image-placeholder::after,
+    .about-page .equipment-image .image-placeholder::after {
+        animation: none !important;
+    }
+}
+
+/* Исправление для маленьких экранов с мобильным меню */
+@media (max-width: 768px) {
+    .about-page .navbar .nav-links {
+        display: none !important;
+    }
+
+    .about-page .navbar .nav-links.active {
+        display: flex !important;
+    }
+}
+
+/* Дополнительные стили для навигации на странице "О нас" */
+.about-page .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: rgba(41, 40, 45, 0.95) !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 48px !important;
+}
+
+.about-page .navbar .logo-link {
+    font-family: "Jost-Bold", Helvetica, sans-serif !important;
+    font-weight: 700 !important;
+    color: #5b9061 !important;
+    font-size: 32px !important;
+    letter-spacing: 0 !important;
+    line-height: normal !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+.about-page .navbar .logo-link:hover {
+    color: #d0a303 !important;
+}
+
+.about-page .navbar .nav-links {
+    display: flex !important;
+    gap: 20px !important;
+    align-items: center !important;
+}
+
+.about-page .navbar .nav-link {
+    font-family: "Jost", Helvetica, sans-serif !important;
+    font-weight: 400 !important;
+    color: #5b9061 !important;
+    font-size: 18px !important;
+    letter-spacing: 0 !important;
+    line-height: normal !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+    white-space: nowrap !important;
+}
+
+.about-page .navbar .nav-link:hover {
+    color: #d0a303 !important;
+}
+
+.about-page .navbar .nav-link.active {
+    color: #d0a303 !important;
+    font-weight: 700 !important;
+}
+
+.about-page .navbar .nav-line {
+    position: absolute !important;
+    width: 100% !important;
+    height: 1px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    object-fit: cover !important;
+}
+
+/* Мобильное меню для страницы "О нас" */
+@media (max-width: 768px) {
+    .about-page .navbar {
+        padding: 0 20px !important;
+        height: 70px !important;
+    }
+
+    .about-page .navbar .logo-link {
+        font-size: 18px !important;
+    }
+
+    .about-page .navbar .menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        color: #5b9061;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .about-page .navbar .nav-links {
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: rgba(41, 40, 45, 0.98) !important;
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 15px !important;
+        display: none !important;
+        z-index: 999 !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3) !important;
+    }
+
+    .about-page .navbar .nav-links.active {
+        display: flex !important;
+    }
+
+    .about-page .navbar .nav-link {
+        font-size: 20px !important;
+        padding: 12px 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+        border-bottom: 1px solid rgba(91, 144, 97, 0.2) !important;
+    }
+
+    .about-page .navbar .nav-link:last-child {
+        border-bottom: none !important;
+    }
+
+    .about-page .navbar .nav-link.active {
+        color: #d0a303 !important;
+    }
+}
+
+/* Улучшение читаемости текста на мобильных */
+@media (max-width: 768px) {
+    .about-page p,
+    .about-page li {
+        text-align: justify !important;
+        hyphens: auto !important;
+    }
+
+    .about-page .mission-text,
+    .about-page .equipment-text {
+        text-align: center !important;
+    }
+}

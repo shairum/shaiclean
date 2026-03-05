@@ -1,0 +1,580 @@
+    .catalog-page {
+      background-color: #29282d;
+      overflow: hidden;
+      width: 100%;
+      min-width: 1440px;
+      min-height: 4000px;
+      position: relative;
+      font-family: 'Jost', sans-serif;
+    }
+
+    .catalog-page .SHA-CLEAN-2 {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b9061;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .catalog-page .line-6 {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      object-fit: cover;
+    }
+
+    .catalog-page .hero-section {
+      position: relative;
+      width: 1440px;
+      margin: 97px auto 0;
+      padding: 100px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: transparent;
+    }
+
+    .catalog-page .hero-title {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b9061;
+      font-size: 64px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 1.2;
+      max-width: 1000px;
+      margin-bottom: 20px;
+    }
+
+    .catalog-page .hero-subtitle {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #5b9061;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .catalog-page .hero-line {
+      width: 80%;
+      height: 1px;
+      background-color: #5b9061;
+      margin: 20px 0;
+    }
+
+    .catalog-page .categories-section {
+      position: relative;
+      width: 1440px;
+      margin: 0 auto;
+      padding: 100px 48px;
+      background-color: transparent;
+    }
+
+    .catalog-page .section-title {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b9061;
+      font-size: 48px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+      margin-bottom: 60px;
+    }
+
+    .catalog-page .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .catalog-page .category-card {
+      background-color: #5b90614c;
+      border-radius: 25px;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .catalog-page .category-card:hover {
+      transform: translateY(-10px);
+      background-color: #5b906180;
+      box-shadow: 0 10px 30px rgba(91, 144, 97, 0.3);
+    }
+
+    .catalog-page .category-icon {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .catalog-page .category-title {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0d0d0;
+      font-size: 28px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 1.3;
+    }
+
+    .catalog-page .category-description {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #d0d0d0;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .catalog-page .category-price {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0a303;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+      margin-top: 15px;
+    }
+
+    .catalog-page .detailed-services {
+      position: relative;
+      width: 1440px;
+      margin: 0 auto;
+      padding: 100px 48px;
+      background-color: transparent;
+    }
+
+    .catalog-page .service-card {
+      background-color: #5b90614c;
+      border-radius: 25px;
+      padding: 40px;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .catalog-page .service-card:hover {
+      background-color: #5b906180;
+      transform: translateY(-5px);
+    }
+
+    .catalog-page .service-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .catalog-page .service-name {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0d0d0;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .service-price {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0a303;
+      font-size: 28px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .service-description {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #d0d0d0;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .catalog-page .service-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .catalog-page .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .catalog-page .feature-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      color: #5b9061;
+    }
+
+    .catalog-page .feature-text {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #d0d0d0;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 1.4;
+    }
+
+    .catalog-page .service-button {
+      width: 289px;
+      height: 61px;
+      background-color: #d0a303;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #29282d;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .catalog-page .service-button:hover {
+      background-color: #e6b804;
+      transform: translateY(-3px);
+    }
+
+    .catalog-page .calculator-section {
+      position: relative;
+      width: 1440px;
+      margin: 0 auto;
+      padding: 100px 48px;
+      background-color: transparent;
+    }
+
+    .catalog-page .calculator-card {
+      background-color: #5b90614c;
+      border-radius: 25px;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .catalog-page .calculator-title {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0d0d0;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .calculator-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .catalog-page .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .catalog-page .input-label {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #d0d0d0;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .input-field {
+      height: 56px;
+      background-color: #29282d;
+      border: 2px solid #5b9061;
+      border-radius: 15px;
+      padding: 0 20px;
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 20px;
+      letter-spacing: 0;
+      transition: border-color 0.3s ease;
+    }
+
+    .catalog-page .input-field:focus {
+      outline: none;
+      border-color: #d0a303;
+    }
+
+    .catalog-page .select-field {
+      height: 56px;
+      background-color: #29282d;
+      border: 2px solid #5b9061;
+      border-radius: 15px;
+      padding: 0 20px;
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 20px;
+      letter-spacing: 0;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    .catalog-page .select-field:focus {
+      outline: none;
+      border-color: #d0a303;
+    }
+
+    .catalog-page .calculator-result {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .catalog-page .result-title {
+      font-family: "Jost-Regular", Helvetica;
+      font-weight: 400;
+      color: #d0d0d0;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .result-price {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #d0a303;
+      font-size: 48px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .calculate-button {
+      width: 289px;
+      height: 61px;
+      background-color: #d0a303;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #29282d;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .catalog-page .calculate-button:hover {
+      background-color: #e6b804;
+      transform: translateY(-3px);
+    }
+
+    .catalog-page .footer {
+      position: relative;
+      width: 1440px;
+      height: 372px;
+      margin: 100px auto 0;
+      background-color: rgba(41, 40, 45, 0.95);
+      padding: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .catalog-page .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .catalog-page .footer-title {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b9061;
+      font-size: 64px;
+      white-space: nowrap;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .catalog-page .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .catalog-page .contact-icon {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .catalog-page .contact-text {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b906180;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .catalog-page .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .catalog-page .footer-logo {
+      font-family: "Jost-Bold", Helvetica;
+      font-weight: 700;
+      color: #5b9061;
+      font-size: 144px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .catalog-page .hero-section,
+    .catalog-page .categories-section,
+    .catalog-page .detailed-services,
+    .catalog-page .calculator-section {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .catalog-page .category-card {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .catalog-page .service-card {
+      animation: fadeInUp 0.4s ease-out forwards;
+    }
+
+    @media (max-width: 1480px) {
+      .catalog-page {
+        min-width: 100%;
+      }
+
+      .catalog-page .hero-section,
+      .catalog-page .categories-section,
+      .catalog-page .detailed-services,
+      .catalog-page .calculator-section,
+      .catalog-page .footer {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .catalog-page .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .catalog-page .service-features {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .catalog-page .categories-grid {
+        grid-template-columns: 1fr;
+      }
+      .catalog-page .hero-title {
+        font-size: 40px;
+      }
+
+      .catalog-page .hero-subtitle {
+        font-size: 18px;
+      }
+    }
+
+    .category-icon {
+      background-color: #5b9061;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #29282d;
+      font-size: 40px;
+    }
+
+    .feature-icon {
+      background-color: #5b9061;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #29282d;
+      font-size: 14px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .section-divider {
+      width: 80%;
+      height: 1px;
+      background-color: #5b9061;
+      margin: 60px auto;
+      opacity: 0.5;
+    }
+
+    .catalog-page a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .catalog-page a:hover {
+      color: inherit;
+    }
